@@ -46,31 +46,31 @@ This repository contains my practice code while learning the basics of Python, i
     height = 5.4
     is_student = True
 
-    # Printing variables
+# Printing variables
     print("Name:", name)
     print("Age:", age)
     print("Height:", height)
     print("Student:", is_student)
     
-    # Getting input from user
+ # Getting input from user
     your_name = input("Enter your name: ")
     your_age = input("Enter your age: ")  # Note: input returns string
 
-    # Type Casting
+# Type Casting
     your_age = int(your_age)
 
-    # Using variables
+# Using variables
     print(f"Hello {your_name}, next year you will be {your_age + 1} years old.")
 
-    # Checking variable types
+ # Checking variable types
     print("Type of your_name:", type(your_name))
     print("Type of your_age:", type(your_age))
 
-    # Multiple assignment
+ # Multiple assignment
     a, b, c = 10, 20, 30
     print("Values of a, b, c:", a, b, c)
     
-    # Swapping variables
+# Swapping variables
     a=5
     b=6
 
