@@ -38,6 +38,7 @@ This repository contains my practice code while learning the basics of Python, i
 ## 🧑‍💻 Sections
 
 ### `01_basics/`
+Contains fundamental Python programs:
 - `variables.py` – Demonstration of variable declaration, input/output, and basic data 
 
 # Variable Declaration
@@ -320,7 +321,190 @@ This repository contains my practice code while learning the basics of Python, i
     increment_counter()
     print("Counter after increment:", counter)
     
+### 2. `modules/`
+Covers built-in and custom Python modules:
+- `math_module.py` – math functions: sqrt, ceil, floor, etc.
+# math_module.py
+    import math
 
+# 1. Square root
+    num = 16
+    print(f"Square root of {num} is {math.sqrt(num)}")
+
+# 2. Ceiling and Floor
+    x = 5.7
+    print(f"Ceiling of {x} is {math.ceil(x)}")   # rounds up
+    print(f"Floor of {x} is {math.floor(x)}")   # rounds down
+
+# 3. Power and exponential
+    print(f"2 raised to power 3 is {math.pow(2, 3)}")  # 2^3 = 8.0
+    print(f"Exponential of 2 is {math.exp(2)}")       # e^2
+
+# 4. Logarithm
+    print(f"Natural log of 10 is {math.log(10)}")          # base e
+    print(f"Log base 10 of 1000 is {math.log10(1000)}")    # base 10
+
+# 5. Trigonometric functions
+    angle = math.radians(30)  # convert degrees to radians
+    print(f"Sine of 30° is {math.sin(angle)}")
+    print(f"Cosine of 30° is {math.cos(angle)}")
+
+# 6. Constants
+    print(f"Value of π (pi): {math.pi}")
+    print(f"Value of e: {math.e}")
+
+- `datetime_module.py` – working with dates and times
+# Working with dates and times in Python
+
+    import datetime
+
+# 1. Current date and time
+    now = datetime.datetime.now()
+    print("Current Date and Time:", now)
+
+# 2. Current date only
+    today = datetime.date.today()
+    print("Today's Date:", today)
+
+# 3. Create a specific date
+    independence_day = datetime.date(1947, 8, 15)
+    print("India's Independence Day:", independence_day)
+
+# 4. Date formatting
+    print("Formatted Date:", now.strftime("%d-%m-%Y %H:%M:%S"))
+
+# 5. Date components
+    print("Year:", now.year)
+    print("Month:", now.month)
+    print("Day:", now.day)
+    print("Hour:", now.hour)
+    print("Minute:", now.minute)
+
+# 6. Adding or subtracting time using timedelta
+    one_week = datetime.timedelta(weeks=1)
+    next_week = today + one_week
+    print("Date after one week:", next_week)
+
+    yesterday = today - datetime.timedelta(days=1)
+    print("Yesterday was:", yesterday)
+
+# 7. Difference between two dates
+    birthday = datetime.date(2025, 1, 1)
+    days_left = birthday - today
+    print("Days until New Year 2025:", days_left.days)
+
+- `numpy_demo.py` – Basic operations using NumPy
+# Basic operations using NumPy
+
+    import numpy as np
+
+# 1. Create arrays
+    arr1 = np.array([1, 2, 3, 4])
+    print("1D Array:", arr1)
+    
+    arr2 = np.array([[1, 2], [3, 4]])
+    print("\n2D Array:\n", arr2)
+
+# 2. Array operations
+    print("Element-wise addition:", arr1 + 5)
+    print("Sum of arr1:", np.sum(arr1))
+    print("Mean of arr1:", np.mean(arr1))
+    print("Max of arr2:", np.max(arr2))
+    
+# 3. Array slicing
+    print("First 2 elements of arr1:", arr1[:2])
+
+# 4. Shape and reshape
+    print("Shape of arr2:", arr2.shape)
+    reshaped = arr1.reshape(2, 2)
+    print("Reshaped arr1:\n", reshaped)
+# some more numpy codes
+#1.
+
+    from array import *
+    vals = array('i',[1,2,-3,4,5])
+    print(vals)
+    newArr = array(vals.typecode, (a*a for a in vals))
+    
+    print(vals.buffer_info())
+    
+    print(vals.typecode)
+    
+    for i in range(len(vals)):
+        print(vals[i])
+    
+    print()
+    
+    for e in newArr:
+        print(e)
+    
+    vals.reverse()
+    print(vals)
+#2.
+
+    from array import *
+    arr = array('i' , [])
+    
+    n = int(input("Enter the length of the array: "))
+    for i in range(n):
+        x = int(input("Enter the number: "))
+        arr.append(x)
+    
+    print(arr)
+    
+    val = int(input("Enter the value for search: "))
+    k = 0
+    for e in arr:
+        if e == val:
+            print(k)
+            break
+    
+        k+=1
+#3.
+
+    from numpy import *
+    arr = array([1,2,3.0,5,4])
+    print(arr)
+    print(arr.dtype)
+    
+    print()
+    
+    arr = linspace(0,15,20)
+    print(arr)
+    
+    print()
+    
+    arr = arange(1,15,4)
+    print(arr)
+    
+    print()
+    
+    arr = logspace(1,40,5)
+    print(arr)
+    print('%.2f'%arr[0])
+    print('%.2f'%arr[1])
+#4.
+
+    from numpy import *
+    arr1 = array([1,2,3,4,5])
+    arr2 = arr1
+    arr3 = arr1.view()
+    arr4 = arr1.copy()
+    
+    arr1[1] = 7
+    print(arr1)
+    print(arr2)
+    print(arr3)
+    print(arr4)
+    print()
+    print(id(arr1))
+    print(id(arr2))
+    print(id(arr3))
+    print(id(arr4))
+
+
+- `random_module.py` – generating random numbers, shuffling, etc.
+- `custom_module_demo.py` – how to create and import custom modules
 ### `02_functions_modules/`
 - `functions.py` – Defining and calling functions
 - `built_in_modules.py` – Using `math`, `random`, and `datetime`
