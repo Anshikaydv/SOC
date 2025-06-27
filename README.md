@@ -37,6 +37,8 @@ This repository contains my practice code while learning the basics of Python, i
 - `datatypes.py` – Working with strings, integers, floats, booleans
 - `loops.py` – `for`, `while`, and loop control
 
+
+
 ### `02_functions_modules/`
 - `functions.py` – Defining and calling functions
 - `built_in_modules.py` – Using `math`, `random`, and `datetime`
