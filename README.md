@@ -393,7 +393,7 @@ Covers built-in and custom Python modules:
     days_left = birthday - today
     print("Days until New Year 2025:", days_left.days)
 
-- `numpy_demo.py` – Basic operations using NumPy
+- `numpy_module_demo.py` – Basic operations using NumPy
 # Basic operations using NumPy
 
     import numpy as np
@@ -503,8 +503,62 @@ Covers built-in and custom Python modules:
     print(id(arr4))
 
 
-- `random_module.py` – generating random numbers, shuffling, etc.
-- `custom_module_demo.py` – how to create and import custom modules
+- `pandas_module_demo.py` – Basics of DataFrames and Series using pandas.
+# pandas_demo.py
+
+    import pandas as pd
+
+# 1. Create a Series
+    marks = pd.Series([85, 90, 95], index=['Math', 'Science', 'English'])
+    print("Marks Series:\n", marks)
+
+# 2. Create a DataFrame
+    data = {
+        'Name': ['Alice', 'Bob', 'Charlie'],
+        'Age': [20, 21, 19],
+        'Branch': ['CS', 'EE', 'ME']
+    }
+    df = pd.DataFrame(data)
+    print("\nStudent DataFrame:\n", df)
+
+# 3. Accessing data
+    print("\nNames column:\n", df['Name'])
+    print("First row:\n", df.iloc[0])
+
+# 4. Basic operations
+    print("\nAverage age:", df['Age'].mean())
+
+- `matplotlib_module_demo.py` – Plotting with Matplotlib
+# matplotlib_demo.py
+
+    import matplotlib.pyplot as plt
+
+# 1. Line plot
+    x = [1, 2, 3, 4, 5]
+    y = [10, 20, 25, 30, 35]
+    plt.plot(x, y, label="Line Plot", color='green')
+    plt.xlabel("X-axis")
+    plt.ylabel("Y-axis")
+    plt.title("Line Graph Example")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+# 2. Bar plot
+    subjects = ['Math', 'Science', 'English']
+    scores = [85, 90, 80]
+    plt.bar(subjects, scores, color='skyblue')
+    plt.title("Subject Scores")
+    plt.ylabel("Marks")
+    plt.show()
+
+# 3. Pie chart
+    labels = ['Python', 'C++', 'Java']
+    sizes = [40, 35, 25]
+    plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+    plt.title("Programming Language Usage")
+    plt.show()
+
 ### `02_functions_modules/`
 - `functions.py` – Defining and calling functions
 - `built_in_modules.py` – Using `math`, `random`, and `datetime`
