@@ -22,7 +22,6 @@ python-basics-and-modules-practice/
 ├── resources/
 │   └── useful_links.md
 
-
 ---
 
 ## 🧑‍💻 Sections
