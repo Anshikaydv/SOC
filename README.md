@@ -311,7 +311,7 @@ Contains fundamental Python programs:
     increment_counter()
     print("Counter after increment:", counter)
     
-### 2. `modules/`
+### `02_modules/`
 Covers built-in and custom Python modules:
 - `math_module.py` – math functions: sqrt, ceil, floor, etc.
 # math_module.py
@@ -549,7 +549,21 @@ Covers built-in and custom Python modules:
     plt.title("Programming Language Usage")
     plt.show()
 
+### `03_resources/`
+Here are some helpful links I followed while learning:
+### ▶️ YouTube Playlists:
+- [Telusko – Python Tutorial](https://www.youtube.com/playlist?list=PLsyeobzWxl7oZ-fx4kF2fVzN3tg3xHh_n)
+- [Numpy](https://www.youtube.com/watch?v=awP79Yb3NaU)
+- [Pandas](https://www.youtube.com/watch?v=JjuLJ3Sb_9U&list=PLjVLYmrlmjGdEE2jFpL71LsVH5QjDP5s4&index=2)
+- [matplotlib](https://www.youtube.com/watch?v=9GvnrQv138s&list=PLjVLYmrlmjGcC0B_FP3bkJ-JIPkV5GuZR)
 
+### 📖 Official Docs:
+- [Numpy Docs](https://numpy.org/doc/stable/user/absolute_beginners.html)
+- [Pandas Docs](https://www.w3schools.com/python/pandas/default.asp)
+- [matplotlib Docs](https://www.w3schools.com/python/matplotlib_intro.asp)
+
+### 💻 Other Sources:
+- ChatGpt
 
 
 
