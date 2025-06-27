@@ -403,7 +403,7 @@ Covers built-in and custom Python modules:
     print("1D Array:", arr1)
     
     arr2 = np.array([[1, 2], [3, 4]])
-    print("\n2D Array:\n", arr2)
+    print("2D Array:", arr2)
 
 # 2. Array operations
     print("Element-wise addition:", arr1 + 5)
@@ -417,7 +417,7 @@ Covers built-in and custom Python modules:
 # 4. Shape and reshape
     print("Shape of arr2:", arr2.shape)
     reshaped = arr1.reshape(2, 2)
-    print("Reshaped arr1:\n", reshaped)
+    print("Reshaped arr1:", reshaped)
 # some more numpy codes
 #1.
 
@@ -510,7 +510,7 @@ Covers built-in and custom Python modules:
 
 # 1. Create a Series
     marks = pd.Series([85, 90, 95], index=['Math', 'Science', 'English'])
-    print("Marks Series:\n", marks)
+    print("Marks Series:", marks)
 
 # 2. Create a DataFrame
     data = {
@@ -519,14 +519,14 @@ Covers built-in and custom Python modules:
         'Branch': ['CS', 'EE', 'ME']
     }
     df = pd.DataFrame(data)
-    print("\nStudent DataFrame:\n", df)
+    print("Student DataFrame:", df)
 
 # 3. Accessing data
-    print("\nNames column:\n", df['Name'])
-    print("First row:\n", df.iloc[0])
+    print("Names column:", df['Name'])
+    print("First row:", df.iloc[0])
 
 # 4. Basic operations
-    print("\nAverage age:", df['Age'].mean())
+    print("Average age:", df['Age'].mean())
 
 - `matplotlib_module_demo.py` – Plotting with Matplotlib
 # matplotlib_demo.py
