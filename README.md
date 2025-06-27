@@ -41,64 +41,64 @@ This repository contains my practice code while learning the basics of Python, i
 - `variables.py` – Demonstration of variable declaration, input/output, and basic data 
 
 # Variable Declaration
-name = "Anshika"
-age = 21
-height = 5.4
-is_student = True
+    name = "Anshika"
+    age = 21
+    height = 5.4
+    is_student = True
 
-# Printing variables
-print("Name:", name)
-print("Age:", age)
-print("Height:", height)
-print("Student:", is_student)
+    # Printing variables
+    print("Name:", name)
+    print("Age:", age)
+    print("Height:", height)
+    print("Student:", is_student)
+    
+    # Getting input from user
+    your_name = input("Enter your name: ")
+    your_age = input("Enter your age: ")  # Note: input returns string
 
-# Getting input from user
-your_name = input("Enter your name: ")
-your_age = input("Enter your age: ")  # Note: input returns string
+    # Type Casting
+    your_age = int(your_age)
 
-# Type Casting
-your_age = int(your_age)
+    # Using variables
+    print(f"Hello {your_name}, next year you will be {your_age + 1} years old.")
 
-# Using variables
-print(f"Hello {your_name}, next year you will be {your_age + 1} years old.")
+    # Checking variable types
+    print("Type of your_name:", type(your_name))
+    print("Type of your_age:", type(your_age))
 
-# Checking variable types
-print("Type of your_name:", type(your_name))
-print("Type of your_age:", type(your_age))
+    # Multiple assignment
+    a, b, c = 10, 20, 30
+    print("Values of a, b, c:", a, b, c)
+    
+    # Swapping variables
+    a=5
+    b=6
 
-# Multiple assignment
-a, b, c = 10, 20, 30
-print("Values of a, b, c:", a, b, c)
+    temp=a
+    a=b
+    b=temp
 
-# Swapping variables
-a=5
-b=6
+    print(a)
+    print(b)
 
-temp=a
-a=b
-b=temp
+    a=a+b
+    b=a-b
+    a=a-b
 
-print(a)
-print(b)
+    print(a)
+    print(b)
 
-a=a+b
-b=a-b
-a=a-b
+    a=a^b
+    b=a^b
+    a=a^b
 
-print(a)
-print(b)
+    print(a)
+    print(b)
 
-a=a^b
-b=a^b
-a=a^b
+    a,b=b,a
 
-print(a)
-print(b)
-
-a,b=b,a
-
-print(a)
-print(b)
+    print(a)
+    print(b)
 
 - `datatypes.py` – Demonstration of common Python data types: strings, lists, dictionaries, sets, and tuples
 
@@ -223,7 +223,7 @@ while i <= x:
     if i>av:
         break
 
-    print("candy")
+     print("candy")
     i+=1
 
 print("bye")
