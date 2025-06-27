@@ -1,5 +1,5 @@
 # SOC
-# Python Practice Repository
+# 🐍 Python Practice Repository
 This repository contains my practice code while learning the basics of Python, including core syntax, built-in modules, and other beginner-friendly topics.
 ---
 
@@ -21,14 +21,7 @@ python-basics-and-modules-practice/
 │
 ├── resources/
 │   └── useful_links.md
-│
-├── README.md
-└── .gitignore
 
-
-# 🐍 Python Practice Repository
-
-This repository contains my practice code while learning the basics of Python, including core syntax, built-in modules, and other beginner-friendly topics.
 
 ---
 
@@ -556,17 +549,7 @@ Covers built-in and custom Python modules:
     plt.title("Programming Language Usage")
     plt.show()
 
-### `02_functions_modules/`
-- `functions.py` – Defining and calling functions
-- `built_in_modules.py` – Using `math`, `random`, and `datetime`
-- `custom_modules.py` – Creating and importing custom modules
 
-### `03_file_handling/`
-- `file_read_write.py` – Reading and writing to text files
 
-### `04_advanced_topics/`
-- `list_comprehensions.py` – Efficient list creation
-- `lambda_map_filter.py` – Functional programming basics
-- `error_handling.py` – `try`, `except`, and error types
 
 
