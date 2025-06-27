@@ -3,31 +3,28 @@
 This repository contains my practice code while learning the basics of Python, including core syntax, built-in modules, and other beginner-friendly topics.
 ---
 
-python-practice/
-├── 01_basics/
+python-basics-and-modules-practice/
+│
+├── basics/
 │   ├── variables.py
 │   ├── datatypes.py
-│   └── loops.py
-|
-├── 02_functions_modules/
-│   ├── functions.py
-│   ├── built_in_modules.py
-│   └── custom_modules.py
-|
-├── 03_file_handling/
-│   └── file_read_write.py
-|
-├── 04_advanced_topics/
-│   ├── list_comprehensions.py
-│   ├── lambda_map_filter.py
-│   └── error_handling.py
-|
+│   ├── conditionals.py
+│   ├── loops.py
+│   └── functions.py
+│
+├── modules/
+│   ├── math_module.py
+│   ├── datetime_module.py
+│   ├── numpy_module_demo.py
+│   ├── pandas_module_demo.py
+│   └── matplotlib_module_demo.py
+│
 ├── resources/
-│   ├── youtube_links.md
-│   └── cheat_sheets.md
-|
+│   └── useful_links.md
+│
 ├── README.md
 └── .gitignore
+
 
 # 🐍 Python Practice Repository
 
