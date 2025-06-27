@@ -267,6 +267,59 @@ This repository contains my practice code while learning the basics of Python, i
             print(j+1, end="")
         print()
 
+- `functions.py` – Defining and calling functions, scope, return values
+# 1. Basic Function (No parameters)
+    def greet()
+        print("Hello! Welcome to GitHUb.")
+    
+    greet()  # calling the function
+
+
+# 2. Function with Parameters
+    def add(a, b):
+        result = a + b
+        print(f"Sum of {a} and {b} is {result}")
+    
+    add(3, 7)
+    
+
+# 3. Function with Return Value
+    def multiply(x, y):
+        return x * y
+    
+    product = multiply(4, 5)
+    print("Multiplication Result:", product)
+    
+
+# 4. Function with Default Arguments
+    def greet_user(name="Guest"):
+        print(f"Hello, {name}!")
+    
+    greet_user("Anshika")
+    greet_user()  # uses default
+    
+
+# 5. Variable Scope: Local vs Global
+    total = 0  # global variable
+    
+    def calculate_sum(a, b):
+        total = a + b  # local variable
+        print("Inside function, total =", total)
+    
+    calculate_sum(5, 10)
+    print("Outside function, total =", total)  # global remains unchanged
+
+
+# 6. Using global keyword (if needed)
+    counter = 0
+    
+    def increment_counter():
+        global counter
+        counter += 1
+    
+    increment_counter()
+    print("Counter after increment:", counter)
+    
 
 ### `02_functions_modules/`
 - `functions.py` – Defining and calling functions
