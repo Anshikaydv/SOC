@@ -62,8 +62,8 @@ SOC_Project/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Sayam2122/SOC-25-Facial_Recognition_app.git
-   cd SOC-25-Facial_Recognition_app
+   git clone https://github.com/Anshikaydv/SOC.git
+   cd SOC
    ```
 
 2. **Navigate to the application directory**
@@ -202,7 +202,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/Sayam2122/SOC-25-Facial_Recognition_app/issues) page
+1. Check the [Issues](https://github.com/Anshikaydv/SOC/issues) page
 2. Create a new issue with detailed description
 3. Contact the development team
 
@@ -219,4 +219,4 @@ If you encounter any issues or have questions:
 
 **Built with ❤️ for SOC-25 Project**
 
-*Developed by: [Sayam2122](https://github.com/Sayam2122)*
+*Developed by: [Anshikaydv](https://github.com/Anshikaydv)*
